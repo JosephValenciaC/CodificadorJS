@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+
+    <div class="loader" id="loader"></div>
+    <div class="logo">
+        <img src="assets/img/Vector.png" alt="logo" />
+    </div>
+
+    <form id="formulario">
+      <textarea
+        required
+        class="textarea"
+        id="texto"
+        cols="22"
+        rows="5"
+        placeholder="Ingrese o pegue el texto aqui"
+      ></textarea>
+    </form>
+
+    <p class="nota">
+      <span class="signo">!</span>Solo letras minúsculas y sin acentos
+    </p>
+    <div class="buttons">
+      <button class="btnEncriptar" onclick="codificar()">Encriptar</button>
+      <button class="btnDesencriptar" onclick="decodificar()">
+        Desencriptar
+      </button>
+    </div>
+
+    <div id="mensaje" class="mensaje">
+      <!-- <img src="assets/img/lock.png" alt="lock"> -->
+    <div id="img" class="img"></div>
+      <p class="msj" id="resultado">
+        
+        <span>Ningún mensaje fue encontrado</span><br />Ingresa el texto que
+        desees encriptar o desencriptar.
+      </p>
+      <button class="btnCopiar" id="btnCopiar" onclick="copiarTexto()">
+        Copiar
+      </button>
+    </div>
+
+
+    <footer class="footer">
+      <p class="footer-text">
+        Hecho por <a href="https://jovial-lollipop-86f38f.netlify.app/" target="_blank" class="link">&copy; JosephValencia</a> Desarrollador Frontend</p>
+
+    <script src="assets/js/codificador.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
