@@ -174,7 +174,6 @@ function recargarSitio() {
     }, tiempo);
   }
   
-  // Ejemplo de uso: mostrar un mensaje "Hola mundo" durante 5 segundos
   mostrarMensaje(11000);
   
 
